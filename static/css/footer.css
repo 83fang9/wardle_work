@@ -1,0 +1,42 @@
+footer {
+  margin-top: 20px;
+}
+
+.keybord-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.keybord-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  width: 50px;
+  height: 60px;
+  background-color: gainsboro;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.keybord-column_big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  width: 70px;
+  height: 60px;
+  background-color: gainsboro;
+  color: black;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.backspace {
+  width: 40px;
+}

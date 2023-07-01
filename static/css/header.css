@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid gray;
+}
+
+.title {
+  width: 60px;
+  font: bold;
+  font-size: 15px;
+  font-family: "Geologica", sans-serif;
+  font-family: "Jua", sans-serif;
+  font-family: "Kablammo", cursive;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tilt Prism", cursive;
+}
+
+.menu_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  margin-left: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.logo-chart {
+  width: 30px;
+}
+
+.logo-question {
+  width: 30px;
+}
+
+.logo-cog {
+  width: 30px;
+}
