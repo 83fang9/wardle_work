@@ -81,17 +81,19 @@ function appStart() {
     }
   };
 
-  const handleClick = () => {
-    const target = event.target;
-    const key = target.innerText;
-
+  const handleClick = (event) => {
+    const key = event.target.dataset.key;
+    const keyCode = key.charCodeAt(0);
+    // console.log('키값은:',key,'키코드는', keyCode);
     const thisBlock = document.querySelector(
       `.board-column[data-index="${attempts}${index}"]`
     );
 
-    if (index === 5) {
-      handleEnterKey();
-    } else {
+    if (key === "backspace") handleBackspace();
+    else if (index === 5) {
+      if (key === "ENTER") handleEnterKey();
+      else return;
+    } else if (65 <= keyCode && keyCode <= 90 && key !=="ENTER" ) {
       thisBlock.innerText = key;
       index += 1;
     }
